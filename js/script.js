@@ -1,19 +1,15 @@
-// VARIABLES
 const listaCursos = document.querySelector('.carreras__content');
 const cursos = document.getElementById('cursos');
 const cursos2 = document.getElementById('cursos2');
 const cursos3 = document.getElementById('cursos3');
-// console.log(listaCursos);
-// LISTENERS
+
 initAPP();
 document.addEventListener('load', initAPP);
 function initAPP() {
-    // console.log('hola mundo')
     listaCursos.addEventListener('click', obtenerCurso)
 }
-// FUNCIONES
+
 function obtenerCurso(e) {
-    // console.log(e.target)
     if (e.target.classList.contains('agregarCarrito')) {
         const curso = e.target.parentElement;
         const curso2 = e.target.parentElement;
@@ -24,7 +20,6 @@ function obtenerCurso(e) {
 
 
 function extraerDatos(curso,curso2,curso3) {
-    // console.log(curso)
     const cursoElegido = {
         span: curso.querySelector('span').textContent
     }
@@ -34,7 +29,6 @@ function extraerDatos(curso,curso2,curso3) {
     const cursoElegido3 = {
         precio: curso3.querySelector('strong').textContent,
     }
-    // console.log(cursoElegido)
     pintarCurso(cursoElegido,cursoElegido2,cursoElegido3);
 }
 
