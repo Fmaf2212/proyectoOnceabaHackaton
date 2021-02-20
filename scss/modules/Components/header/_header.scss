@@ -4,14 +4,64 @@
         display: flex;
         justify-content: space-between;    
 
+        @include mq(600px){
+            padding: 10px;
+        }
+
         &__img1{
             width: 25%;
             height: auto;
+
+            @include mq(600px){
+                width: 50%;
+            }
+        }
+
+        .canasta{
+            position: relative;
         }
 
         &__img2{
             width: 80px;
             height: 90px;
+        }
+
+        .infoCarrito{
+            display: none;
+            position: absolute;
+            top: 100px;
+            background: white;
+            left: -50px;
+            overflow-x: auto;
+            max-height: 260px;
+
+            #cursos{
+                img{
+                    width: 60px;
+                }
+            }
+        }
+        .active{
+            display: block;
+        }
+
+        #cursos{
+            display: flex;
+            flex-direction: column;
+        }
+
+        #cursos2{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 35px;
+        }
+
+        #cursos3{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 42px;
         }
     }
 }

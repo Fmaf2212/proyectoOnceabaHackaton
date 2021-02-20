@@ -14,7 +14,29 @@
     <header class="header">
         <div class="header__content container">
             <img class="header__content__img1" src="img/logo.png" alt="">
-            <img class="header__content__img2" src="img/carrito.png" alt="">
+            <div class="canasta">
+                <img class="header__content__img2" src="img/carrito.png" alt="">
+                <div class="infoCarrito">
+                    <table class="default">
+                        <tr>
+                            <th>Imagen</th>
+                            <th>Nombre</th>
+                            <th>Precio</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div id="cursos"></div>
+                            </td>
+                            <td>
+                                <div id="cursos2"></div>
+                            </td>
+                            <td>
+                                <div id="cursos3"></div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
         </div>
     </header>
     <section class="banner">
@@ -28,9 +50,10 @@
         <section class="carreras__content container">
             <article class="carreras__content__article">
                 <img src="img/imgProduct2.jpg" alt="">
+                <span style="display: none;">2</span>
                 <div class="info">
                     <h3 class="font-bold">HTML</h3>
-                    <p>Diego Cueva</p>
+                    <p class="imgProduct">Diego Cueva</p>
                     <img src="img/starts.png" alt="">
                     <div class="info__costo">
                         <p>S/279.00</p>
@@ -41,6 +64,7 @@
             </article>
             <article class="carreras__content__article">
                 <img src="img/imgProduct1.png" alt="">
+                <span style="display: none;">1</span>
                 <div class="info">
                     <h3 class="font-bold">CSS</h3>
                     <p>Diego Cueva</p>
@@ -54,6 +78,7 @@
             </article>
             <article class="carreras__content__article">
                 <img src="img/imgProduct2.jpg" alt="">
+                <span style="display: none;">2</span>
                 <div class="info">
                     <h3 class="font-bold">Fundamentos Programación</h3>
                     <p>Diego Cueva</p>
@@ -67,6 +92,7 @@
             </article>
             <article class="carreras__content__article">
                 <img src="img/imgProduct1.png" alt="">
+                <span style="display: none;">1</span>
                 <div class="info">
                     <h3 class="font-bold">Responsive Web Design</h3>
                     <p>Diego Cueva</p>
@@ -80,6 +106,7 @@
             </article>
             <article class="carreras__content__article">
                 <img src="img/imgProduct2.jpg" alt="">
+                <span style="display: none;">2</span>
                 <div class="info">
                     <h3 class="font-bold">Flexbox</h3>
                     <p>Diego Cueva</p>
@@ -93,6 +120,7 @@
             </article>
             <article class="carreras__content__article">
                 <img src="img/imgProduct1.png" alt="">
+                <span style="display: none;">1</span>
                 <div class="info">
                     <h3 class="font-bold">Grid System</h3>
                     <p>Diego Cueva</p>
@@ -104,10 +132,20 @@
                 </div>
                 <button class="agregarCarrito font-bold">AGREGAR AL CARRITO</button>
             </article>
-            
+
         </section>
     </div>
-    <div id="cursos"></div>
+
+    <script src="js/script.js"></script>
+    <script>
+        const carrito = document.querySelector('.header__content__img2');
+        const detalleCarrito = document.querySelector('.infoCarrito');
+
+        carrito.addEventListener('mouseenter', (e) => {
+            e.preventDefault();
+            detalleCarrito.classList.toggle('active');
+        });
+    </script>
 </body>
 
 </html>

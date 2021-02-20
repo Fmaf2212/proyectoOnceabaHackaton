@@ -58,14 +58,86 @@
           justify-content: space-between;
 }
 
+@media screen and (max-width: 600px) {
+  .header__content {
+    padding: 10px;
+  }
+}
+
 .header__content__img1 {
   width: 25%;
   height: auto;
 }
 
+@media screen and (max-width: 600px) {
+  .header__content__img1 {
+    width: 50%;
+  }
+}
+
+.header__content .canasta {
+  position: relative;
+}
+
 .header__content__img2 {
   width: 80px;
   height: 90px;
+}
+
+.header__content .infoCarrito {
+  display: none;
+  position: absolute;
+  top: 100px;
+  background: white;
+  left: -50px;
+  overflow-x: auto;
+  max-height: 260px;
+}
+
+.header__content .infoCarrito #cursos img {
+  width: 60px;
+}
+
+.header__content .active {
+  display: block;
+}
+
+.header__content #cursos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header__content #cursos2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 35px;
+}
+
+.header__content #cursos3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 42px;
 }
 
 .banner {
@@ -95,6 +167,12 @@
           justify-content: center;
 }
 
+@media screen and (max-width: 600px) {
+  .banner__content {
+    padding: 10px;
+  }
+}
+
 .banner__content h1 {
   color: #FFFFFF;
 }
@@ -122,6 +200,19 @@
   -ms-grid-rows: (1fr)[2];
       grid-template-rows: repeat(2, 1fr);
   gap: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .carreras__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 10px;
+  }
 }
 
 .carreras__content__article {

@@ -18,6 +18,12 @@
 
         gap: 30px;
 
+        @include mq(600px){
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+        }
+
         &__article{
             background: white;
             border: 2px solid #EEEBEB;

@@ -11,6 +11,10 @@
         align-items: flex-start; 
         justify-content: center;
 
+        @include mq(600px){
+            padding: 10px;
+        }
+
         h1{
             color: $fourth-Color;
         }
