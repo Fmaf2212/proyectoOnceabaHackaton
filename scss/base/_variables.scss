@@ -1,0 +1,55 @@
+$first-Color:#8FC6E8;
+$second-Color:#27262A;
+$third-Color: #222222;
+$fourth-Color:#FFFFFF;
+
+$xs: 1.1rem;
+$s: 2.5rem;
+$m: 2.1rem;
+$l: 2.5rem;
+$xl: 3rem;
+
+
+.xs{
+    font-size: .2rem;
+}
+.s{
+    font-size: .5rem;
+}
+.m{
+    font-size: 1rem;
+}
+.l{
+    font-size: 1.5rem;
+}
+.xl{
+    font-size: 2rem;
+}
+
+.font-bold{
+    font-weight: bold;
+}
+
+.font-light{
+    font-weight: lighter;
+}
+
+.font-colorWhite{
+    color: white
+}
+
+/*ESPACIO SEGURO*/
+.container{
+    max-width: 920px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: 'Poppins', sans-serif;
+}
+

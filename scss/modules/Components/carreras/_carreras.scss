@@ -1,0 +1,66 @@
+.carreras{
+
+    padding-top: 30px;
+    background: #FDF6F6;
+
+    .title{
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 50px;
+    }
+
+    &__content{
+
+        display: grid;
+
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+
+        gap: 30px;
+
+        &__article{
+            background: white;
+            border: 2px solid #EEEBEB;
+
+            img{
+                width: 100%;
+            }
+            
+            .info{
+                margin: 10px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                img{
+                    width: 20%;
+                }
+
+                &__costo{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    p{
+                        text-decoration: line-through;
+                    }
+
+                    strong{
+                        font-weight: 800;
+                    }
+                }
+            }
+
+            button{
+                border-style: none;
+                color: $fourth-Color;
+                background-color: $first-Color;
+                border-radius: 5px;
+                width: 94%;
+                height: 40px;
+                margin: 10px;
+                cursor: pointer;
+            }
+        }
+    }
+}
